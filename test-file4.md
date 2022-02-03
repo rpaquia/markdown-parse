@@ -1,7 +1,7 @@
-#Title
+# Title 
 
 These are square brackets: [ ]
 
 Hello!
 
-These are parenthesis: ( )
+These are parenethese: ( )

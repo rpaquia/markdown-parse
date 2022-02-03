@@ -19,15 +19,15 @@ public class MarkdownParseTest {
         Path fileName = Path.of("test-file.md");
 	    String contents = Files.readString(fileName);
         assertEquals(expect, MarkdownParse.getLinks(contents));
-    }
+    } 
 
     @Test
     public void getLinks2() throws IOException{
         List<String> expect = List.of("image.jpg");
-        Path fileName = Path.of("test-file2.md");
+        Path fileName = Path.of("new-test.md");
 	    String contents = Files.readString(fileName);
         assertEquals(expect, MarkdownParse.getLinks(contents));
-    }
+    } 
 
     @Test
     public void getLinks3() throws IOException{

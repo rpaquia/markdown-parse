@@ -20,13 +20,12 @@ public class MarkdownParse {
                 break;
             }
 
-            if(openParen != (nextCloseBracket + 1)) {
+            if(openParen != (nextCloseBracket + 1)){
                 currentIndex = nextCloseBracket + 1;
                 continue;
             }
 
             int closeParen = markdown.indexOf(")", openParen);
-            
 
             toReturn.add(markdown.substring(openParen + 1, closeParen));
             currentIndex = closeParen + 1;
