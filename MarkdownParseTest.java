@@ -68,4 +68,30 @@ public class MarkdownParseTest {
 	    String contents = Files.readString(fileName);
         assertEquals(expect, MarkdownParse.getLinks(contents));
     }
+
+    @Test
+    public void snippet1() throws IOException{
+        List<String> expect = List.of();
+        Path fileName = Path.of("snippet1.md");
+	    String contents = Files.readString(fileName);
+        assertEquals(expect, MarkdownParse.getLinks(contents));
+    }
+
+    @Test
+    public void snippet2() throws IOException{
+        List<String> expect = List.of();
+        Path fileName = Path.of("snippet2.md");
+	    String contents = Files.readString(fileName);
+        assertEquals(expect, MarkdownParse.getLinks(contents));
+    }
+
+    @Test
+    public void snippet3() throws IOException{
+        List<String> expect = List.of();
+        Path fileName = Path.of("snippet3.md");
+	    String contents = Files.readString(fileName);
+        assertEquals(expect, MarkdownParse.getLinks(contents));
+    }
+
+
 }  
