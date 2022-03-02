@@ -68,7 +68,7 @@ public class MarkdownParseTest {
 	    String contents = Files.readString(fileName);
         assertEquals(expect, MarkdownParse.getLinks(contents));
     }
-
+    /*
     @Test
     public void snippet1() throws IOException{
         List<String> expect = List.of();
@@ -92,6 +92,5 @@ public class MarkdownParseTest {
 	    String contents = Files.readString(fileName);
         assertEquals(expect, MarkdownParse.getLinks(contents));
     }
-
-
+    */
 }  
