@@ -70,25 +70,17 @@ public class MarkdownParseTest {
     }
 
     @Test
-    public void reportSnippet1() throws IOException{
-        List<String> expect = List.of("'google.com", "google.com", "ucsd.edu");
-        Path fileName = Path.of("report-test-1.md");
+    public void test103() throws IOException{
+        List<String> expect = List.of();
+        Path fileName = Path.of("103.md");
         String contents = Files.readString(fileName);
         assertEquals(expect, MarkdownParse.getLinks(contents));
     }
 
     @Test
-    public void reportSnippet2() throws IOException{
-        List<String> expect = List.of("a.com", "a.com(())", "example.com");
-        Path fileName = Path.of("report-test-2.md");
-        String contents = Files.readString(fileName);
-        assertEquals(expect, MarkdownParse.getLinks(contents));
-    }
-
-    @Test
-    public void reportSnippet3() throws IOException{
-        List<String> expect = List.of("https://ucsd-cse15l-w22.github.io/");
-        Path fileName = Path.of("report-test-3.md");
+    public void test123() throws IOException{
+        List<String> expect = List.of();
+        Path fileName = Path.of("123.md");
         String contents = Files.readString(fileName);
         assertEquals(expect, MarkdownParse.getLinks(contents));
     }
